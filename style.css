@@ -377,3 +377,13 @@ a:hover {
     padding: 2.5rem 0;
   }
 }
+@media (max-width: 600px) {
+  .logo-img {
+    height: 48px;   /* Mobile Größe */
+    width: auto;
+  }
+
+  .logo-text {
+    font-size: 0.9rem;   /* passt besser zum kleineren Logo */
+  }
+}
