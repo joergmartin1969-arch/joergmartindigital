@@ -61,7 +61,7 @@ a:hover {
 .logo-block {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 .logo-img {
   height: 88px;   /* Logo-Höhe */
@@ -70,7 +70,7 @@ a:hover {
 }
 .logo-text {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--color-blue);
 }
 
