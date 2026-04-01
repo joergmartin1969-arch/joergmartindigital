@@ -86,7 +86,7 @@ header {
 /* Smartphones */
 @media (max-width: 480px) {
   .nav-logo {
-    height: 200px;
+    height: 60px;
   }
 }
 
