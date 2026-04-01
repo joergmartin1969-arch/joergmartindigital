@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – Jörg Martin – Digitale Assistenz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kontakt für kleine Elektrobetriebe – unverbindliches Gespräch, Fragen, Terminabsprachen.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<header>
+  <div class="wrapper navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Assistenz" class="nav-logo">
+      </a>
+      <div class="nav-brand">Digitale Assistenz</div>
+    </div>
+
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Start</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="zertifikate.html">Zertifikate</a>
+        <a href="kontakt.html" class="nav-cta">Kontakt</a>
+      </div>
+
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrapper">
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Kontakt</div>
+        <h1>So erreichen Sie mich.</h1>
+        <p class="section-lead">
+          Für Fragen, ein unverbindliches Erstgespräch oder eine kurze Rückmeldung – ich melde mich in der Regel innerhalb von 24 Stunden.
+        </p>
+      </div>
+
+      <div class="contact-info">
+        <p><strong>Telefon:</strong> 0151 / …</p>
+        <p><strong>E‑Mail:</strong> info@joergmartindigital.de</p>
+        <p><strong>Standort:</strong> Wilhelmshaven</p>
+      </div>
+
+      <h2 style="margin-top: 2rem;">Kontaktformular</h2>
+      <p>Sie können mir auch direkt über das Formular schreiben:</p>
+
+      <!-- Microsoft Forms Embed -->
+      <iframe 
+        src="https://forms.microsoft.com/r/tEyDrQpnLG"
+        width="100%" 
+        height="900" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0"
+        style="border: none; border-radius: 8px;">
+      </iframe>
+
+      <p class="dsb-hinweis" style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
+        Mit dem Absenden des Formulars werden Ihre Angaben zur Beantwortung Ihrer Anfrage verarbeitet. 
+        Die Verarbeitung erfolgt über Microsoft Forms gemäß DSGVO. Weitere Informationen finden Sie in der Datenschutzerklärung.
+      </p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> Jörg Martin – Digitale Assistenz</div>
+    <div>Wilhelmshaven · Fokus: kleine Elektrobetriebe</div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
