@@ -71,8 +71,22 @@ header {
 }
 
 .nav-logo {
-  height: 42px;
+  height: 70px;
   width: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 45px;
+  }
+}
+
 }
 
 .nav-brand {
