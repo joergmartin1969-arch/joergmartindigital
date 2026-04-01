@@ -1,7 +1,7 @@
 {
   "name": "Jörg Martin – Digitale Entlastung",
   "short_name": "Digitale Entlastung",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1F4E79",
