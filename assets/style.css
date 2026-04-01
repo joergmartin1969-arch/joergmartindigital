@@ -70,22 +70,26 @@ header {
   gap: 0.75rem;
 }
 
+/* Desktop */
 .nav-logo {
   height: 70px;
   width: auto;
 }
 
+/* Tablets */
 @media (max-width: 768px) {
   .nav-logo {
     height: 55px;
   }
 }
 
+/* Smartphones */
 @media (max-width: 480px) {
   .nav-logo {
     height: 45px;
   }
 }
+
 
 }
 
