@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – Jörg Martin – Digitale Assistenz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kontakt zu Jörg Martin – Digitale Assistenz für kleine Elektrobetriebe. Unverbindliches Gespräch anfragen.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="wrapper navbar">
+    <div class="nav-left">
+      <a href="/index.html">
+        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Assistenz" class="nav-logo">
+      </a>
+      <div class="nav-brand">Digitale Assistenz</div>
+    </div>
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <a href="/index.html">Start</a>
+        <a href="/leistungen.html">Leistungen</a>
+        <a href="/ueber-mich.html">Über mich</a>
+        <a href="/zertifikate.html">Zertifikate</a>
+        <a href="/kontakt.html" class="nav-cta active">Kontakt</a>
+      </div>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrapper">
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Kontakt</div>
+        <h2>Einfach erreichbar. Persönlich. Unkompliziert.</h2>
+        <p class="section-lead">
+          Sie möchten wissen, wie ein Telefonassistent oder E‑Mail‑Agent Ihren Betrieb entlasten kann?
+          Oder Sie haben eine Frage zu meinen Leistungen? Ich freue mich auf Ihre Nachricht.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-box">
+          <h3>Kontaktformular</h3>
+          <p class="form-hint">
+            Das Formular wird über einen datenschutzfreundlichen Dienst verarbeitet. Es werden keine Cookies gesetzt.
+          </p>
+
+          <form action="https://formspree.io/f/DEINE_ID" method="POST">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+              <label for="email">E‑Mail</label>
+              <input type="email" id="email" name="_replyto" required>
+            </div>
+
+            <div>
+              <label for="phone">Telefon (optional)</label>
+              <input type="text" id="phone" name="telefon">
+            </div>
+
+            <div>
+              <label for="message">Ihr Anliegen</label>
+              <textarea id="message" name="nachricht" required></textarea>
+            </div>
+
+            <p class="form-hint">
+              Mit dem Absenden Ihrer Nachricht erklären Sie sich damit einverstanden, dass ich Ihre Angaben zur
+              Beantwortung Ihrer Anfrage verwende. Ihre Daten werden nicht an Dritte weitergegeben.
+            </p>
+
+            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          </form>
+        </div>
+
+        <div class="contact-box">
+          <h3>Direkter Kontakt</h3>
+          <div class="contact-details">
+            <p><strong>Telefon:</strong> 0151 / 72238052</p>
+            <p><strong>E‑Mail:</strong> joerg.martin@arcor.de</p>
+            <p><strong>Standort:</strong> Wilhelmshaven</p>
+          </div>
+
+          <h4 style="margin-top: 1.5rem;">Wie geht es nach Ihrer Anfrage weiter?</h4>
+          <ol style="margin: 0.5rem 0 0; padding-left: 1.2rem; color: var(--muted); font-size: 0.95rem;">
+            <li>Ich melde mich zeitnah bei Ihnen.</li>
+            <li>Wir sprechen kurz über Ihre aktuelle Situation.</li>
+            <li>Ich zeige Ihnen, wie ein Assistent Sie konkret entlasten kann.</li>
+            <li>Wenn es passt, starten wir mit einer einfachen Einrichtung – ohne Risiko, ohne lange Bindung.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> Jörg Martin – Digitale Assistenz</div>
+    <div>Wilhelmshaven · Fokus: kleine Elektrobetriebe</div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

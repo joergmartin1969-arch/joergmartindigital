@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Über mich – Jörg Martin – Digitale Assistenz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Über Jörg Martin: 37 Jahre Elektrohandwerk, heute digitale Entlastung für kleine Elektrobetriebe.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div class="wrapper navbar">
+    <div class="nav-left">
+      <a href="/index.html">
+        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Assistenz" class="nav-logo">
+      </a>
+      <div class="nav-brand">Digitale Assistenz</div>
+    </div>
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <a href="/index.html">Start</a>
+        <a href="/leistungen.html">Leistungen</a>
+        <a href="/ueber-mich.html" class="active">Über mich</a>
+        <a href="/zertifikate.html">Zertifikate</a>
+        <a href="/kontakt.html" class="nav-cta">Kontakt</a>
+      </div>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrapper">
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Über mich</div>
+        <h2>37 Jahre Elektrohandwerk. Heute digitale Entlastung für kleine Betriebe.</h2>
+      </div>
+
+      <div class="about-layout">
+        <div>
+          <p>
+            Ich heiße <strong>Jörg Martin</strong> und arbeite seit <strong>1989</strong> im Elektrohandwerk.
+            Über <strong>37 Jahre</strong> war ich in verschiedenen Bereichen tätig – von industrieller EMSR‑Technik
+            über Schaltschrankbau bis hin zu EX‑Installationen, Netzwerkaufbau und Anlagenbetreuung.
+          </p>
+          <p>
+            Ich kenne den Alltag kleiner Elektrobetriebe nicht aus Büchern, sondern aus eigener Erfahrung:
+          </p>
+          <ul class="list-check">
+            <li>Baustellen und Zeitdruck</li>
+            <li>Kundenanrufe und Rückfragen</li>
+            <li>Materialthemen und Abstimmungen</li>
+            <li>ein volles Postfach</li>
+            <li>und ständig das Telefon</li>
+          </ul>
+          <p>
+            Genau aus dieser Realität heraus ist meine Geschäftsidee entstanden.
+          </p>
+
+          <h3>Warum ich heute digitale Entlastung anbiete</h3>
+          <p>
+            Viele kleine Betriebe haben dieselben Probleme: verpasste Anrufe, unstrukturierte Rückrufwünsche,
+            E‑Mail‑Chaos, Unterbrechungen im Tagesgeschäft und fehlende Büroressourcen.
+          </p>
+          <p>
+            Ich habe diese Belastungen selbst erlebt – und ich weiß, wie sehr sie den Arbeitsfluss stören.
+            Deshalb unterstütze ich heute kleine Elektrobetriebe mit <strong>praxisnahen, KI‑gestützten Entlastungslösungen</strong>,
+            die genau dort helfen, wo im Alltag die größten Engpässe entstehen.
+          </p>
+
+          <h3>Meine Mission</h3>
+          <p>
+            Ich möchte kleinen Elektrobetrieben helfen, ihren Alltag zu entlasten – ohne komplizierte Technik,
+            ohne große Umstellungen, ohne Fachchinesisch.
+          </p>
+          <p><strong>Einfach. Verständlich. Praxistauglich.</strong></p>
+        </div>
+
+        <aside>
+          <img src="assets/portrait.jpg" alt="Foto von Jörg Martin" class="portrait">
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-kicker">Was mich auszeichnet</div>
+        <h2>Handwerkserfahrung + moderne digitale Kompetenz.</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Praxis statt Theorie</h3>
+          <p>Ich komme aus dem Handwerk. Ich weiß, wie ein Betrieb wirklich funktioniert.</p>
+        </div>
+        <div class="card">
+          <h3>Technisches Verständnis</h3>
+          <p>Durch meine jahrzehntelange Erfahrung kann ich typische Abläufe, Kundenanfragen und Engpässe sofort einordnen.</p>
+        </div>
+        <div class="card">
+          <h3>Moderne IT‑Kompetenz</h3>
+          <p>
+            Ich habe umfangreiche Microsoft‑Weiterbildungen abgeschlossen – unter anderem in Microsoft 365, Azure,
+            Entra ID, KI‑Grundlagen und Cloud‑Konzepten.
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <strong>Diese Kombination aus Handwerk + moderner IT‑Kompetenz ist selten</strong> – und genau das macht mein Angebot
+        für kleine Elektrobetriebe so wertvoll.
+      </div>
+
+      <div class="hero-actions" style="margin-top: 2rem;">
+        <a href="/zertifikate.html" class="btn btn-secondary">Zertifikate & Kompetenzen ansehen</a>
+        <a href="/kontakt.html" class="btn btn-primary">Kontakt aufnehmen</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>© <span id="year"></span> Jörg Martin – Digitale Assistenz</div>
+    <div>Wilhelmshaven · Fokus: kleine Elektrobetriebe</div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
