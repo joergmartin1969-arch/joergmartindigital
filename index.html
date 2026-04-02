@@ -5,6 +5,22 @@
   <title>Jörg Martin – Digitale Entlastung für kleine Handwerksbetriebe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Digitale Entlastung für kleine Handwerksbetriebe – KI-Telefonassistent, E-Mail-Agent und monatliche Betreuung. Praxisnah, verständlich, sofort nutzbar.">
+  <meta name="keywords" content="digitale Entlastung, Handwerksbetriebe, KI-Telefonassistent, E-Mail-Agent, Automatisierung, kleine Betriebe, Wilhelmshaven">
+  <link rel="canonical" href="https://joergmartindigital.de/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joergmartindigital.de/">
+  <meta property="og:title" content="Jörg Martin – Digitale Entlastung für kleine Handwerksbetriebe">
+  <meta property="og:description" content="Digitale Entlastung für kleine Handwerksbetriebe – KI-Telefonassistent, E-Mail-Agent und monatliche Betreuung.">
+  <meta property="og:image" content="https://joergmartindigital.de/assets/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://joergmartindigital.de/">
+  <meta property="twitter:title" content="Jörg Martin – Digitale Entlastung für kleine Handwerksbetriebe">
+  <meta property="twitter:description" content="Digitale Entlastung für kleine Handwerksbetriebe – KI-Telefonassistent, E-Mail-Agent und monatliche Betreuung.">
+  <meta property="twitter:image" content="https://joergmartindigital.de/assets/logo.png">
 
 <!-- Standard-Favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -19,6 +35,8 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/style.css?=2">
+  <!-- JavaScript -->
+  <script src="assets/script.js" defer></script>
 </head>
 
 <body>
@@ -26,11 +44,11 @@
   <div class="wrapper navbar">
     <div class="nav-left">
       <a href="index.html">
-        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Endlastung " class="nav-logo">
+        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Entlastung" class="nav-logo">
       </a>
       <div class="nav-brand">Jörg Martin Digitale Entlastung</div>
     </div>
-    <nav>
+    <nav role="navigation" aria-label="Hauptnavigation">
      <div class="nav-links" id="navLinks">
   <a href="index.html">Start</a>
   <a href="leistungen.html">Leistungen</a>
@@ -39,7 +57,7 @@
   <a href="kontakt.html" class="nav-cta">Kontakt</a>
 </div>
 
-      <div class="burger" id="burger">
+      <div class="burger" id="burger" aria-label="Menü öffnen/schließen" aria-expanded="false">
         <span></span><span></span><span></span>
       </div>
     </nav>
@@ -190,13 +208,5 @@
 
 
 
-<script>
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
