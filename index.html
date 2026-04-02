@@ -6,7 +6,6 @@
     <title>Jörg Martin – Digitale Entlastung für Handwerksbetriebe</title>
 
     <meta name="description" content="Digitale Entlastung für kleine Handwerksbetriebe. KI‑Telefonassistent, KI‑E‑Mail‑Agent und monatliche Betreuung – sofort nutzbare Unterstützung für Ihren Betrieb.">
-    <meta name="keywords" content="Handwerk Digitalisierung, KI Telefonassistent, KI E-Mail Agent, digitale Entlastung Handwerk, Büroentlastung Handwerksbetrieb, Wilhelmshaven Digitalisierung">
 
     <style>
         body {
@@ -16,6 +15,40 @@
             color: #222;
         }
 
+        /* HEADER / NAVIGATION */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .topbar img {
+            height: 55px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #005bbb;
+        }
+
+        .kontakt-btn {
+            padding: 8px 16px;
+            background: #ff7a00;
+            color: white !important;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* HERO */
         header {
             padding: 60px 20px;
             text-align: center;
@@ -66,10 +99,6 @@
             text-align: left;
         }
 
-        .leistung-box h3 {
-            margin-top: 0;
-        }
-
         /* VERTRAUENSABSCHNITT */
         .vertrauen {
             padding: 60px 20px;
@@ -103,10 +132,42 @@
             color: #005bbb;
             text-decoration: none;
         }
+
+        /* RESPONSIVE */
+        @media (max-width: 750px) {
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-top: 10px;
+            }
+
+            .topbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- TOPBAR MIT LOGO + MENÜ -->
+    <div class="topbar">
+        <img src="assets/logo.png" alt="Logo Jörg Martin Digitale Entlastung">
+
+        <nav>
+            <a href="index.html">Start</a>
+            <a href="leistungen.html">Leistungen</a>
+            <a href="ueber-mich.html">Über mich</a>
+            <a href="zertifikate.html">Zertifikate</a>
+            <a href="#kontakt" class="kontakt-btn">Kontakt</a>
+        </nav>
+    </div>
 
     <!-- HERO -->
     <header>
@@ -179,15 +240,10 @@
     </section>
 
     <!-- FOOTER -->
-   <footer id="kontakt">
-    <p>© 2026 Jörg Martin – Digitale Entlastung</p>
-    <p>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</p>
-    <p>
-        <a href="impressum.html">Impressum</a> · 
-        <a href="datenschutz.html">Datenschutz</a>
-    </p>
-</footer>
-
+    <footer id="kontakt">
+        <p>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</p>
+        <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
 
 </body>
 </html>
