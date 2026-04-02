@@ -1,0 +1,131 @@
+/* Grundeinstellungen */
+:root {
+    --primary-color: #004a99; /* Vertrauensvolles Blau */
+    --secondary-color: #ff8800; /* Auffälliges Orange für Buttons */
+    --text-color: #333;
+    --light-bg: #f4f7f6;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--white);
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Hero Sektion */
+#hero {
+    background: linear-gradient(rgba(0,74,153,0.8), rgba(0,74,153,0.8)), url('images/werkstatt-bg.jpg');
+    background-size: cover;
+    color: var(--white);
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Leistungen - Die Karten */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    gap: 20px;
+    background: var(--light-bg);
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    flex: 1;
+}
+
+.card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Kontaktformular */
+footer {
+    padding: 50px 5%;
+    background: #222;
+    color: var(--white);
+    text-align: center;
+}
+
+footer form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+    nav ul { display: none; } /* Einfachheitshalber für Mobile ausgeblendet */
+    .card-container {
+        flex-direction: column;
+    }
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+}
