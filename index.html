@@ -1,162 +1,16 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jörg Martin – Digitale Entlastung für Handwerksbetriebe</title>
 
-    <meta name="description" content="Digitale Entlastung für kleine Handwerksbetriebe. KI‑Telefonassistent, KI‑E‑Mail‑Agent und monatliche Betreuung – sofort nutzbare Unterstützung für Ihren Betrieb.">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-        }
-
-        /* HEADER / NAVIGATION */
-        .topbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 25px;
-            background: white;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .topbar img {
-            height: 55px;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #222;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #005bbb;
-        }
-
-        .kontakt-btn {
-            padding: 8px 16px;
-            background: #ff7a00;
-            color: white !important;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        /* HERO */
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: #f2f2f2;
-        }
-
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #005bbb;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        /* LEISTUNGEN */
-        .leistungen {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .leistungen-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .leistung-box {
-            background: #f7f7f7;
-            padding: 25px;
-            border-radius: 12px;
-            width: 300px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            text-align: left;
-        }
-
-        /* VERTRAUENSABSCHNITT */
-        .vertrauen {
-            padding: 60px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 40px;
-            justify-content: center;
-        }
-
-        .vertrauen img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .vertrauen-text {
-            max-width: 500px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: #f2f2f2;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #005bbb;
-            text-decoration: none;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 750px) {
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 15px;
-                margin-top: 10px;
-            }
-
-            .topbar {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav a {
-                margin-left: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
-    <!-- TOPBAR MIT LOGO + MENÜ -->
+    <!-- FIXIERTE KOPFZEILE -->
     <div class="topbar">
         <img src="assets/logo.png" alt="Logo Jörg Martin Digitale Entlastung">
 
@@ -169,12 +23,11 @@
         </nav>
     </div>
 
-    <!-- HERO -->
-    <header>
+    <!-- HERO (jetzt kompakt) -->
+    <header class="hero">
         <h1>Digitale Entlastung für kleine Handwerksbetriebe</h1>
-        <p>Damit Sie mehr Zeit für Ihr Handwerk haben – und weniger Stress im Büro. 
-        Ich unterstütze kleine Handwerksbetriebe mit digitalen Assistenten, die Anrufe entgegennehmen, E‑Mails sortieren und Abläufe vereinfachen.</p>
-        <a href="#kontakt" class="cta-button">Gespräch anfragen</a>
+        <p>Mehr Zeit für Ihr Handwerk – weniger Stress im Büro.</p>
+        <a href="#kontakt" class="cta-button">Gespräch anfordern</a>
     </header>
 
     <!-- LEISTUNGEN -->
@@ -232,24 +85,19 @@
 
             <ul>
                 <li>praxisnah – entwickelt aus echten Herausforderungen im Handwerk</li>
-                <li>verständlich – ohne Technik‑Chaos oder komplizierte Systeme</li>
-                <li>sofort nutzbar – ohne lange Projekte oder Schulungen</li>
-                <li>maßgeschneidert – exakt auf kleine Handwerksbetriebe abgestimmt</li>
+                <li>verständlich – ohne Technik‑Chaos</li>
+                <li>sofort nutzbar – ohne lange Projekte</li>
+                <li>maßgeschneidert – für kleine Handwerksbetriebe</li>
             </ul>
         </div>
     </section>
 
-    <!-- FOOTER -->
-  <footer>
-  <div class="footer-inner">
-    <div>© <span id="year"></span> Jörg Martin – Digitale Endlastung </div>
-    <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
+    <!-- FOOTER (eine Zeile, kompakt) -->
+    <footer id="kontakt">
+        © 2026 Jörg Martin – Digitale Entlastung · Wilhelmshaven · Fokus: kleine Handwerksbetriebe · 
+        <a href="impressum.html">Impressum</a> · 
+        <a href="datenschutz.html">Datenschutz</a>
+    </footer>
 
-    <div class="footer-links">
-      <a href="impressum.html">Impressum</a> · 
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
-</footer>
 </body>
 </html>
