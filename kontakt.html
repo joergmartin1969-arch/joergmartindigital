@@ -8,11 +8,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/icons/favicon-128x128.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?=3">
 </head>
 
 <body>
@@ -41,7 +43,7 @@
   </div>
 </header>
 
-<main>
+<main id="main-content" aria-label="Hauptinhalt">
   <div class="wrapper">
     <section class="section">
       <div class="section-header">
@@ -100,10 +102,7 @@
     Formular öffnen
   </a>
 
- 
-
 </div>
-
 
       <p class="dsb-hinweis" style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
         Mit dem Absenden des Formulars werden Ihre Angaben zur Beantwortung Ihrer Anfrage verarbeitet. 
@@ -117,10 +116,22 @@
   <div class="footer-inner">
     <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
     <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
+    <div>
+      <a href="tel:+49000000000">Telefon: +49 000 000000</a><br>
+      <a href="mailto:info@joergmartindigital.de">E-Mail: info@joergmartindigital.de</a>
+    </div>
 
     <div class="footer-links">
       <a href="impressum.html">Impressum</a> · 
       <a href="datenschutz.html">Datenschutz</a>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/deinprofil" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
+      <a href="https://www.instagram.com/deinprofil" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a> |
+      <a href="https://www.tiktok.com/@deinprofil" target="_blank" rel="noopener" aria-label="TikTok">TikTok</a> |
+      <a href="https://www.xing.com/profile/Joerg_Martin" target="_blank" rel="noopener" aria-label="Xing">Xing</a> |
+      <a href="https://www.linkedin.com/in/joergmartindigital" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
     </div>
   </div>
 </footer>
@@ -129,9 +140,35 @@
 <script>
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
+
+  const closeMenu = () => {
+    navLinks.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+
   burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(isOpen));
   });
+
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMenu();
+    }
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
