@@ -1,3 +1,8 @@
+/* Elemente ausblenden */
+.hide {
+  display: none !important;
+}
+
 :root {
   --primary: #f28c1b;
   --primary-dark: #d6740f;
