@@ -1,9 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum – Jörg Martin Digitale Entlastung</title>
+  <meta name="description" content="Impressum von Jörg Martin Digitale Entlastung in Wilhelmshaven gemäß § 5 TMG.">
+  <link rel="canonical" href="https://joergmartindigital.de/impressum.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Impressum – Jörg Martin Digitale Entlastung">
+  <meta property="og:description" content="Impressum von Jörg Martin Digitale Entlastung in Wilhelmshaven gemäß § 5 TMG.">
+  <meta property="og:url" content="https://joergmartindigital.de/impressum.html">
+  <meta property="og:image" content="https://joergmartindigital.de/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Impressum – Jörg Martin Digitale Entlastung">
+  <meta name="twitter:description" content="Impressum von Jörg Martin Digitale Entlastung in Wilhelmshaven gemäß § 5 TMG.">
+  <meta name="twitter:url" content="https://joergmartindigital.de/impressum.html">
+  <meta name="twitter:image" content="https://joergmartindigital.de/assets/logo.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
@@ -11,11 +23,37 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/style.css?v=3">
+  <script src="assets/script.js" defer></script>
 </head>
 
-<body>
-  <main>
+<body class="legal-page">
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+<header>
+  <div class="wrapper navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Entlastung" class="nav-logo" loading="lazy" width="200" height="80">
+      </a>
+      <div class="nav-brand">Jörg Martin Digitale Entlastung</div>
+    </div>
+    <nav role="navigation" aria-label="Hauptnavigation">
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Start</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="zertifikate.html">Zertifikate</a>
+        <a href="kontakt.html" class="nav-cta">Kontakt</a>
+      </div>
+
+      <div class="burger" id="burger" aria-label="Menü öffnen/schließen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main id="main-content" aria-label="Hauptinhalt">
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Rechtliches</div>
@@ -34,8 +72,8 @@
 
       <p>
         <strong>Kontakt:</strong><br>
-        Telefon: 0151 / …<br>
-        E-Mail: info@joergmartindigital.de<br>
+        Telefon: +49 15678 300678<br>
+        E-Mail: kontakt@joergmartindigital.de<br>
         Website: https://joergmartindigital.de
       </p>
 
@@ -64,8 +102,8 @@
     <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
     <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
     <div>
-      <a href="tel:+49000000000">Telefon: +49 000 000000</a><br>
-      <a href="mailto:info@joergmartindigital.de">E-Mail: info@joergmartindigital.de</a>
+      <a href="tel:+4915678300678">Telefon: +49 15678 300678</a><br>
+      <a href="mailto:kontakt@joergmartindigital.de">E-Mail: kontakt@joergmartindigital.de</a>
     </div>
     <div class="footer-links">
       <a href="impressum.html">Impressum</a> · 
@@ -81,12 +119,10 @@
     </div>
   </div>
 </footer>
-
-<script>
-  const yearElement = document.getElementById('year');
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
-</script>
 </body>
 </html>
+
+
+
+
+

@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Zertifikate & Kompetenzen – Jörg Martin – Digitale Entlastung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Zertifikate & Kompetenzen: Microsoft 365, Azure, Entra ID, KI-Grundlagen – kombiniert mit 37 Jahren Handwerkserfahrung.">
+  <link rel="canonical" href="https://joergmartindigital.de/zertifikate.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zertifikate & Kompetenzen – Jörg Martin Digitale Entlastung">
+  <meta property="og:description" content="Microsoft 365, Azure, Entra ID und KI-Kompetenzen kombiniert mit 37 Jahren Handwerkserfahrung.">
+  <meta property="og:url" content="https://joergmartindigital.de/zertifikate.html">
+  <meta property="og:image" content="https://joergmartindigital.de/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zertifikate & Kompetenzen – Jörg Martin Digitale Entlastung">
+  <meta name="twitter:description" content="Microsoft 365, Azure, Entra ID und KI-Kompetenzen kombiniert mit 37 Jahren Handwerkserfahrung.">
+  <meta name="twitter:url" content="https://joergmartindigital.de/zertifikate.html">
+  <meta name="twitter:image" content="https://joergmartindigital.de/assets/logo.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
@@ -14,7 +25,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/style.css?=3">
+  <link rel="stylesheet" href="assets/style.css?v=3">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
 <header>
@@ -34,7 +46,7 @@
   <a href="kontakt.html" class="nav-cta">Kontakt</a>
 </div>
 
-      <div class="burger" id="burger">
+      <div class="burger" id="burger" aria-label="Menü öffnen/schließen" aria-expanded="false">
         <span></span><span></span><span></span>
       </div>
     </nav>
@@ -46,7 +58,7 @@
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Zertifikate & Kompetenzen</div>
-        <h2>Moderne digitale Kompetenz – kombiniert mit 37 Jahren Handwerkserfahrung.</h2>
+        <h1>Moderne digitale Kompetenz – kombiniert mit 37 Jahren Handwerkserfahrung.</h1>
         <p class="section-lead">
           Ich verbinde jahrzehntelange Praxis im Elektrohandwerk mit fundiertem Wissen in modernen Microsoft‑Technologien.
           Diese Kombination ermöglicht es mir, digitale Entlastungslösungen zu entwickeln, die praxisnah, zuverlässig und verständlich sind.
@@ -146,8 +158,8 @@
     <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
     <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
     <div>
-      <a href="tel:+49000000000">Telefon: +49 000 000000</a><br>
-      <a href="mailto:info@joergmartindigital.de">E-Mail: info@joergmartindigital.de</a>
+      <a href="tel:+4915678300678">Telefon: +49 15678 300678</a><br>
+      <a href="mailto:kontakt@joergmartindigital.de">E-Mail: kontakt@joergmartindigital.de</a>
     </div>
 
     <div class="footer-links">
@@ -156,7 +168,7 @@
     </div>
 
     <div class="social-links">
-      <a href="https://www.facebook.com/profile.php?id=61583975570117 target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
+      <a href="https://www.facebook.com/profile.php?id=61583975570117" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
       <a href="https://www.instagram.com/deinprofil" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a> |
     
       <a href="https://www.xing.com/profile/Joerg_Martin" target="_blank" rel="noopener" aria-label="Xing">Xing</a> |
@@ -166,13 +178,10 @@
 </footer>
 
 
-<script>
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
+
+
+
+
+

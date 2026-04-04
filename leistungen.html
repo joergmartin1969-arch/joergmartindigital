@@ -1,10 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Leistungen – Jörg Martin – Digitale Entlastung</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Leistungen: KI-Telefonassistent, KI-E-Mail-Agent und monatliche Betreuung für kleine Handwerksbetriebe.">
+  <link rel="canonical" href="https://joergmartindigital.de/leistungen.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leistungen – Jörg Martin Digitale Entlastung">
+  <meta property="og:description" content="KI-Telefonassistent, KI-E-Mail-Agent und monatliche Betreuung für kleine Handwerksbetriebe.">
+  <meta property="og:url" content="https://joergmartindigital.de/leistungen.html">
+  <meta property="og:image" content="https://joergmartindigital.de/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leistungen – Jörg Martin Digitale Entlastung">
+  <meta name="twitter:description" content="KI-Telefonassistent, KI-E-Mail-Agent und monatliche Betreuung für kleine Handwerksbetriebe.">
+  <meta name="twitter:url" content="https://joergmartindigital.de/leistungen.html">
+  <meta name="twitter:image" content="https://joergmartindigital.de/assets/logo.png">
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -15,7 +26,8 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icons/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="assets/style.css?=3">
+  <link rel="stylesheet" href="assets/style.css?v=3">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
 <header>
@@ -35,7 +47,7 @@
   <a href="kontakt.html" class="nav-cta">Kontakt</a>
 </div>
 
-      <div class="burger" id="burger">
+      <div class="burger" id="burger" aria-label="Menü öffnen/schließen" aria-expanded="false">
         <span></span><span></span><span></span>
       </div>
     </nav>
@@ -47,7 +59,7 @@
     <section class="section">
       <div class="section-header">
         <div class="section-kicker">Meine Leistungen</div>
-        <h2>Digitale Entlastung für kleine Handwerksbetriebe.</h2>
+        <h1>Digitale Entlastung für kleine Handwerksbetriebe.</h1>
         <p class="section-lead">
           Ich biete drei klar definierte Leistungen an, die speziell für den Alltag kleiner Handwerksbetriebe entwickelt wurden.
           Keine komplizierte Technik, keine langen Projekte – sondern sofort nutzbare Entlastung.
@@ -73,7 +85,7 @@
           <li>nimmt Rückrufwünsche auf</li>
           <li>beantwortet einfache Standardfragen (z. B. Öffnungszeiten)</li>
           <li>erstellt klare Zusammenfassungen</li>
-          <li>leitet alles per E‑Mail oder Messenger weiter</li>
+          <li>leitet alles per E-Mail oder Messenger weiter</li>
         </ul>
 
         <h4>Ihr Nutzen</h4>
@@ -94,16 +106,16 @@
 
     <section class="section">
       <div class="card">
-        <h3>2. KI‑E‑Mail‑Agent</h3>
+        <h3>2. KI‑E-Mail‑Agent</h3>
         <p><em>Ordnung im Postfach – ohne zusätzlichen Aufwand.</em></p>
         <p>
           Viele kleine Betriebe kämpfen mit einem überfüllten Postfach.
-          Der KI‑E‑Mail‑Agent schafft Struktur, bevor Sie überhaupt anfangen müssen.
+          Der KI‑E-Mail‑Agent schafft Struktur, bevor Sie überhaupt anfangen müssen.
         </p>
 
         <h4>Was der Agent für Sie übernimmt</h4>
         <ul>
-          <li>Vorsortierung eingehender E‑Mails</li>
+          <li>Vorsortierung eingehender E-Mails</li>
           <li>thematische Kategorisierung</li>
           <li>Erkennung von Prioritäten</li>
           <li>Markierung von Rückfragen</li>
@@ -172,8 +184,8 @@
     <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
     <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
     <div>
-      <a href="tel:+49000000000">Telefon: +49 000 000000</a><br>
-      <a href="mailto:info@joergmartindigital.de">E-Mail: info@joergmartindigital.de</a>
+      <a href="tel:+4915678300678">Telefon: +49 15678 300678</a><br>
+      <a href="mailto:kontakt@joergmartindigital.de">E-Mail: kontakt@joergmartindigital.de</a>
     </div>
 
     <div class="footer-links">
@@ -192,13 +204,11 @@
 </footer>
 
 
-<script>
-  const burger = document.getElementById('burger');
-  const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
+
+
+
+
+
+
