@@ -1,55 +1,58 @@
-# Jörg Martin – Digitale Entlastung
+# Jörg Martin - Digitale Entlastung
 
-## Projekt-Status
+Statische Website fuer das Angebot "Digitale Entlastung" mit Fokus auf kleine Handwerksbetriebe.
 
-Angaben:
-- Statische Website mit modernem HTML/CSS/JS
-- Mobile Navigation mit Burger-Menu
-- Hero CTA + Leistungen
-- Footer + rechtliche Seiten (Impressum, Datenschutz)
+## Aktueller Stand
 
-## Umsetzung (done)
+- Alle Seiten live und konsistent verlinkt.
+- Favicon-Setup bereinigt (inkl. Dark-Variante und Manifest).
+- Social-Links auf allen Seiten vereinheitlicht.
+- OG/Twitter-Metadaten auf allen Seiten konsistent.
+- Dediziertes Social-Preview-Bild vorhanden: `assets/og-image.jpg` (1200x630).
+- Kontaktseite bereinigt: keine Inline-Styles/Inline-Hover-Events mehr.
+- Performance-Optimierungen umgesetzt:
+  - `assets/portrait.jpg` stark komprimiert (Fallback-Bild).
+  - `ueber-mich.html` nutzt WebP mit JPG-Fallback (`picture`).
+  - `assets/logo.png` deutlich verkleinert fuer schnelleren Seitenaufbau.
+- Unnoetiges Asset entfernt (`assets/portrait-rund.png`).
 
-- Accessibility: skip-link, focus-visible
-- Mobile-nav: close on link click, ESC, resize
-- SEO On-Page: Title/description/OG, canonical, robots
-- PWA: manifest + theme-color
-- Strukturierte Daten: LocalBusiness JSON-LD
+## Technik
 
-## Nächste Schritte (ToDo)
+- HTML, CSS, JavaScript (ohne Framework).
+- Einheitliches Script-Loading mit `assets/script.js` via `defer`.
+- Strukturierte Daten ueber JSON-LD.
 
-1. Performance
-   - Bilder WebP + srcset + dimensions
-   - CSS/JS minify
-   - Server compression (gzip/brotli)
-2. SEO
-   - Sitemap.xml + robots.txt
-   - OG image 1200x630 prüfen
-   - Canonical pro Seite
-3. Accessibility
-   - Kontrast prüfen
-   - Formulare mit label+autocomplete
-   - ARIA-Fehlerstaaten
-4. Conversion
-   - Telefon/Mail als Links (erledigt)
-   - Formular-Tracking
-   - Analytics / Consent
-5. Infrastruktur
-   - robots.txt (erledigt)
-   - sitemap.xml (erledigt)
-   - HTTPS + HSTS
+## Seiten
 
-## Deployment
+- `index.html`
+- `leistungen.html`
+- `ueber-mich.html`
+- `zertifikate.html`
+- `kontakt.html`
+- `impressum.html`
+- `datenschutz.html`
+- `404.html`
 
-1. Host über HTTPS.
-2. Lighthouse-Reporting regelmäßig.
-3. Folgende Tools:
-   - WebPageTest, Google PageSpeed, Lighthouse
-   - WAVE, axe
+## SEO und Sharing
 
-## Optional
+- Canonicals sind derzeit auf `https://jörgmartindigital.de` gesetzt (aktueller Live-Stand).
+- `robots.txt`, `sitemap.xml` und `site.webmanifest` sind vorhanden.
+- Open Graph und Twitter Cards verweisen auf `assets/og-image.jpg`.
 
-- Service Worker (Offline-Cache)
-- Schema.org FAQ/Review-Beweis
-- A/B-Test Headline-Text, CTA-Anzahl
+## Deployment und Pflege
+
+1. Aenderungen lokal committen und nach `main` pushen.
+2. Nach groesseren Meta- oder Bildaenderungen Social-Preview einmal neu validieren.
+3. Regelmaessig kurz pruefen:
+   - interne Links
+   - externe Kernlinks (Forms, Social)
+   - Dateigroessen grosser Assets
+
+## Naechste sinnvolle Schritte
+
+1. Domain-Umstellung erst nach Live-Schaltung der neuen Domain:
+   - Canonicals, Sitemap, Robots, OG/Twitter, JSON-LD auf Ziel-Domain umstellen.
+   - 301-Redirect-Konzept von Alt- auf Zieldomain.
+2. Optional: weiterer Accessibility-Pass (Kontraste, Fokusfuehrung, Formulare).
+3. Optional: Lighthouse-Benchmark dokumentieren (vorher/nachher).
 
