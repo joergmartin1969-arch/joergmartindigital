@@ -28,6 +28,19 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
@@ -182,6 +195,9 @@ header {
   flex-direction: column;
   gap: 4px;
   cursor: pointer;
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
 .burger span {
