@@ -35,7 +35,7 @@ Statische Website fuer das Angebot "Digitale Entlastung" mit Fokus auf kleine Ha
 
 ## SEO und Sharing
 
-- Canonicals sind derzeit auf `https://jörgmartindigital.de` gesetzt (aktueller Live-Stand).
+- Canonicals sind derzeit auf `https://joergmartindigital.de` gesetzt (aktueller Live-Stand).
 - `robots.txt`, `sitemap.xml` und `site.webmanifest` sind vorhanden.
 - Open Graph und Twitter Cards verweisen auf `assets/og-image.jpg`.
 
