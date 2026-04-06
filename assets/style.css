@@ -747,10 +747,6 @@ footer {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .hero-aside {
-    order: -1;
-  }
-
   .about-layout,
   .contact-layout,
   .grid-3,
