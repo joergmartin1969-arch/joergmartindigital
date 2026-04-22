@@ -804,3 +804,30 @@ footer {
     font-size: 2rem;
   }
 }
+/* Spezielle Zentrierung für Impressum & Datenschutz */
+body.legal-page .section {
+  max-width: 800px;     /* Optimale Breite für lange Texte */
+  margin-left: auto;    /* Zentriert den Block links */
+  margin-right: auto;   /* Zentriert den Block rechts */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body.legal-page h1, 
+body.legal-page h2 {
+  text-align: left;     /* Überschriften bleiben linksbündig */
+  margin-top: 2rem;
+}
+
+body.legal-page p, 
+body.legal-page ul {
+  text-align: left;     /* Text bleibt linksbündig */
+  margin-bottom: 1.2rem;
+}
+
+/* Optimierung für Mobilgeräte */
+@media (max-width: 768px) {
+  body.legal-page .section {
+    padding-top: 1rem;
+  }
+}
