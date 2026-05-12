@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  repo: joergmartin1969-arch/joergmartindigital
+  branch: main # Falls dein Haupt-Branch "master" heißt, bitte hier ändern
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Beiträge"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Beitragsbild", name: "image", widget: "image", required: false}
+      - {label: "Inhalt", name: "body", widget: "markdown"}
