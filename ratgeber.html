@@ -1,100 +1,80 @@
 ---
-layout: default
-title: Ratgeber
+layout: null
 ---
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/style.css?v=3">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
   <title>Ratgeber – Jörg Martin</title>
 </head>
 <body>
   <header>
-  <div class="wrapper navbar">
-    <div class="nav-left">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Entlastung" class="nav-logo" loading="lazy" width="200" height="80">
-      </a>
-      <div class="nav-brand">Jörg Martin - Digitale Entlastung</div>
-    </div>
-    <nav role="navigation" aria-label="Hauptnavigation">
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">Start</a>
-        <a href="leistungen.html">Leistungen</a>
-        <a href="ratgeber.html" class="active">Ratgeber</a>
-        <a href="ueber-mich.html">Über mich</a>
-        <a href="zertifikate.html">Zertifikate</a>
-        <a href="kontakt.html" class="nav-cta">Kontakt</a>
+    <div class="wrapper navbar">
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="Logo" class="nav-logo" width="200" height="80">
+        </a>
+        <div class="nav-brand">Jörg Martin - Digitale Entlastung</div>
       </div>
-      <button class="burger" id="burger" type="button" aria-label="Menü öffnen/schließen" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </div>
-</header>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Start</a>
+          <a href="leistungen.html">Leistungen</a>
+          <a href="ratgeber.html" class="active">Ratgeber</a>
+          <a href="ueber-mich.html">Über mich</a>
+          <a href="zertifikate.html">Zertifikate</a>
+          <a href="kontakt.html" class="nav-cta">Kontakt</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-  <main id="main-content" class="wrapper">
+  <main id="main-content" class="wrapper" style="margin-top: 140px; min-height: 70vh;">
     <section class="section">
       <div class="section-header">
-        <div class="section-kicker">Ratgeber & Tipps</div>
-        <h1>Praxisnahe Impulse für dein Handwerk</h1>
+        <div class="section-kicker">Wissen & Tipps</div>
+        <h2>Mein Ratgeber</h2>
       </div>
 
-      <div class="grid-3">
+      <div class="blog-grid">
         {% for post in site.posts %}
-        <div class="card">
-          <div class="hero-kicker" style="font-size: 0.7rem;">{{ post.date | date: "%d.%m.%Y" }}</div>
+        <div class="blog-card">
+          <div class="section-kicker">{{ post.date | date: "%d.%m.%Y" }}</div>
           <h3>{{ post.title }}</h3>
           <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-          <a href="{{ post.url }}" class="btn btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.8rem;">Weiterlesen</a>
+          <a href="{{ post.url }}" class="btn btn-secondary">Weiterlesen</a>
         </div>
         {% endfor %}
       </div>
     </section>
   </main>
 
- <footer>
-  <div class="footer-inner"> <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
-    <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
-    <div>
-      <a href="tel:+4915678300678">Telefon: +49 15678 300678</a><br>
-      <a href="mailto:kontakt@joergmartindigital.de">E-Mail: kontakt@joergmartindigital.de</a>
-    </div>
-
-    <div class="footer-links">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="/admin/" style="opacity: 0.5; font-size: 0.8rem;">Login</a>
-    </div>
-
-    <div class="social-links">
+  <footer>
+    <div class="footer-inner"> <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung</div>
+      <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
+      <div>
+        <a href="tel:+4915678300678">Telefon: +49 15678 300678</a><br>
+        <a href="mailto:kontakt@joergmartindigital.de">E-Mail: kontakt@joergmartindigital.de</a>
+      </div>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="/admin/" style="opacity: 0.5; font-size: 0.8rem;">Login</a>
+      </div>
+      <div class="social-links">
       <a href="https://www.facebook.com/profile.php?id=61583975570117" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
       <a href="https://www.instagram.com/joerg.martin.18/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a> |
+    
       <a href="https://www.xing.com/profile/Joerg_Martin210/web_profiles" target="_blank" rel="noopener" aria-label="Xing">Xing</a> |
       <a href="https://www.linkedin.com/in/joerg-martin-a5543127a/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
     </div>
-  </div>
-</footer>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </div>
+  </footer>
 
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-
+  
   <script src="assets/script.js" defer></script>
-
-</body>
-</html>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </body>
 </html>
