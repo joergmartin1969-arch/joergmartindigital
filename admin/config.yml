@@ -1,14 +1,15 @@
 backend:
   name: git-gateway
   repo: joergmartin1969-arch/joergmartindigital
-  branch: main # Falls dein Haupt-Branch "master" heißt, bitte hier ändern
+  branch: main
+  site_url: https://joergmartindigital.de
 
-media_folder: "images/blog"
-public_folder: "/images/blog"
+media_folder: "images/ratgeber" # Ordner für Bilder umbenannt
+public_folder: "/images/ratgeber"
 
 collections:
-  - name: "blog"
-    label: "Blog Beiträge"
+  - name: "ratgeber"           # Interner Name (kleingeschrieben)
+    label: "Ratgeber-Beiträge" # Das steht jetzt oben links im Dashboard
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
