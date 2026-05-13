@@ -1,54 +1,57 @@
+<---
+# Dieses Layout wird für die einzelnen Beitragsseiten verwendet
+---
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/style.css?v=3">
+  <link rel="stylesheet" href="/assets/style.css">
   <title>{{ page.title }} – Jörg Martin</title>
 </head>
 <body>
-  header>
-  <div class="wrapper navbar">
-    <div class="nav-left">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="Logo Jörg Martin – Digitale Entlastung" class="nav-logo" loading="lazy" width="200" height="80">
-      </a>
-      <div class="nav-brand">Jörg Martin Digitale Entlastung</div>
-    </div>
-    <nav role="navigation" aria-label="Hauptnavigation">
-      <div class="nav-links" id="navLinks">
-         <a href="index.html">Start</a>
-         <a href="leistungen.html">Leistungen</a>
-         <a href="ratgeber.html" class="active">Ratgeber</a>
-         <a href="ueber-mich.html">Über mich</a>
-         <a href="zertifikate.html">Zertifikate</a>
-         <a href="kontakt.html" class="nav-cta">Kontakt</a>
+  <header>
+    <div class="wrapper navbar">
+      <div class="nav-left">
+        <a href="/index.html">
+          <img src="/assets/logo.png" alt="Logo Jörg Martin" class="nav-logo" width="200" height="80">
+        </a>
+        <div class="nav-brand">Jörg Martin - Digitale Entlastung</div>
       </div>
+      <nav role="navigation" aria-label="Hauptnavigation">
+        <div class="nav-links">
+          <a href="/index.html">Start</a>
+          <a href="/leistungen.html">Leistungen</a>
+          <a href="/ratgeber.html" class="active">Ratgeber</a>
+          <a href="/ueber-mich.html">Über mich</a>
+          <a href="/zertifikate.html">Zertifikate</a>
+          <a href="/kontakt.html" class="nav-cta">Kontakt</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      <button class="burger" id="burger" type="button" aria-label="Menü öffnen/schließen" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-  <main class="wrapper" style="max-width: 800px; margin-top: 100px;">
-    <article>
-      <div class="hero-kicker">{{ page.date | date: "%d.%m.%Y" }}</div>
-      <h1 style="font-size: 2.4rem; line-height: 1.2; margin: 0.5rem 0 2rem;">{{ page.title }}</h1>
+  <main id="main-content" class="wrapper" style="margin-top: 140px; min-height: 70vh;">
+    <article class="section">
+      <div class="section-kicker">{{ page.date | date: "%d.%m.%Y" }}</div>
+      <h1 style="margin-bottom: 2rem;">{{ page.title }}</h1>
       
-      <div class="hero-lead" style="color: var(--text); line-height: 1.8;">
+      {% if page.image %}
+      <img src="{{ page.image }}" alt="{{ page.title }}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 2rem;">
+      {% endif %}
+
+      <div class="post-content" style="line-height: 1.8; font-size: 1.1rem; color: #333;">
         {{ content }}
       </div>
-      
-      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+
+      <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #eee;">
         <a href="/ratgeber.html" class="btn btn-secondary">← Zurück zur Übersicht</a>
       </div>
     </article>
   </main>
 
  <footer>
-  <div class="wrapper footer-inner">
+  <div class="footer-inner">
     <div>© <span id="year"></span> Jörg Martin – Digitale Entlastung </div>
     <div>Wilhelmshaven · Fokus: kleine Handwerksbetriebe</div>
     <div>
@@ -70,5 +73,6 @@
     </div>
   </div>
 </footer>
+  <script src="/assets/script.js" defer></script>
 </body>
 </html>
