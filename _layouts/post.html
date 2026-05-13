@@ -2,14 +2,21 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Der Schrägstrich vorne ist wichtig! -->
+    <title>{{ page.title }}</title>
 </head>
 <body>
-    <header> <a href="/">Zurück zur Startseite</a> </header>
-    <main>
-        <h1>{{ title }}</h1>
-        <div>{{ content }}</div>
-    </main>
+    <header>
+        <nav><a href="/blog.html">← Zurück zum Blog</a></nav>
+    </header>
+
+    <article style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <h1>{{ page.title }}</h1>
+        <p><small>Veröffentlicht am {{ page.date | date: "%d.%m.%Y" }}</small></p>
+        <hr>
+        <div class="blog-content">
+            {{ content }} <!-- Hier fügt Jekyll den Text aus dem CMS ein -->
+        </div>
+    </article>
 </body>
 </html>
