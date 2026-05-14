@@ -2,6 +2,7 @@
 title: "Jörg Martin – Digitale Entlastung"
 description: "KI-Lösungen und Automatisierung für Handwerksbetriebe in Wilhelmshaven & Umgebung."
 url: "https://joergmartindigital.de" # Wichtig für die Sitemap!
+permalink: pretty  # <-- Diese Zeile sorgt für saubere Links überall
 
 # Blog-Einstellungen
 permalink: /ratgeber/:title/
@@ -18,3 +19,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - .github
+
