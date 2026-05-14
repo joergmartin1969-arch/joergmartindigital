@@ -64,7 +64,7 @@
   <link rel="stylesheet" href="assets/style.css?v=3">
   <!-- JavaScript -->
   <script src="assets/script.js" defer></script>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 
 <body>
@@ -248,8 +248,7 @@
     <div class="footer-links">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
-      <a href="/admin/" style="opacity: 0.5; font-size: 0.8rem;">Login</a>
-    </div>
+        </div>
 
     <div class="social-links">
       <a href="https://www.facebook.com/profile.php?id=61583975570117" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a> |
@@ -261,17 +260,6 @@
 </footer>
 
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+
 </body>
 </html>
