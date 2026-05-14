@@ -1,3 +1,20 @@
-title: Mein Blog
-description: Hier entstehen meine neuen Beiträge
+# Seiten-Einstellungen
+title: "Jörg Martin – Digitale Entlastung"
+description: "KI-Lösungen und Automatisierung für Handwerksbetriebe in Wilhelmshaven & Umgebung."
+url: "https://joergmartindigital.de" # Wichtig für die Sitemap!
+
+# Blog-Einstellungen
+permalink: /ratgeber/:title/
 markdown: kramdown
+
+# Automatisierung (Plugins)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed # Erstellt automatisch einen RSS-Feed für deine Leser
+
+# Ausschlussliste (Dateien, die nicht auf die Webseite sollen)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .github
