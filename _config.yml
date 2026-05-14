@@ -1,22 +1,28 @@
 # Seiten-Einstellungen
 title: "Jörg Martin – Digitale Entlastung"
 description: "KI-Lösungen und Automatisierung für Handwerksbetriebe in Wilhelmshaven & Umgebung."
-url: "https://joergmartindigital.de" # Wichtig für die Sitemap!
-permalink: pretty  # <-- Diese Zeile sorgt für saubere Links überall
+url: "https://joergmartindigital.de"
+permalink: pretty
 
 # Blog-Einstellungen
-permalink: /ratgeber/:title/
+# Wir nutzen "defaults", damit der Ratgeber-Pfad nur für Blog-Posts gilt
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /ratgeber/:title/
+
 markdown: kramdown
 
 # Automatisierung (Plugins)
 plugins:
   - jekyll-sitemap
-  - jekyll-feed # Erstellt automatisch einen RSS-Feed für deine Leser
+  - jekyll-feed
 
-# Ausschlussliste (Dateien, die nicht auf die Webseite sollen)
+# Ausschlussliste
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - .github
-
